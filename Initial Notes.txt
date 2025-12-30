@@ -1,0 +1,119 @@
+WalkRealm
+
+--------
+
+CORE IDEA
+
+- A location-based walking game focused on persistent trails, and competitive realm control
+- Walking in the real world leaves permanent marks on a shared map
+- Users compete by claiming space over time
+- Score is earned daily by 'ruling' a greater area (realm) every day
+
+--------
+
+GAME LOOP
+
+- User opens the app
+- App tracks location while walking
+- A trail is drawn behind the user
+- Trail becomes permanently claimed
+- Claimed trails contribute to realm control
+- Realm rulers earn daily score
+- Score feeds long-term progression and status
+
+--------
+
+TRAILS
+
+- Trails are drawn as the user walks
+- Approximate width: 10m
+- Trails are persistent but fade over time
+- Trails contribute to realm ownership but do not stack infinitely for score
+
+--------
+
+Realms
+
+- The world is divided into fixed grid cells (e.g. 50m x 50m)
+- Trails claim cells they pass through
+- A realm is a larger grouping of cells (e.g. 500m x 500m)
+- Owned by a ruler
+
+--------
+
+RULER RULES
+
+- The ruler is the user who controls the most cells in that realm
+- Ruler earn 1 score per realm per day
+- Score is granted only if the user is still ruler at the daily cutoff
+- Daily cutoff happens randomly every day (with heads up?) - See how BeReal does it
+- Realms must meet a minimum activity threshold to generate score
+
+--------
+
+PLAYERS
+
+- Users are known as Walkers
+- Public Information
+	- Username (unique)
+	- Display name
+	- Profile picture
+	- Total score
+	- Favourite colour (used for name + realm highlight)
+	- Friend list
+- Private Information
+	- Email
+	- Date of birth (under 18 -> entire account is private)
+- Invisible Information
+	- Live location
+	- Raw trail data
+	- Walking history
+
+--------
+
+VISIBILITY RULES
+
+Users can see:
+	- Unclaimed trails
+	- Their own claimed trails (shown in their favourite colour)
+	- Other users’ claimed trails (shown in grey, anonymous)
+	- Territory borders and current ruler (highlighted in the ruler's favourite colour)
+Users cannot see:
+	- Any information about other trails (including friends)
+
+--------
+
+STATS RECORDED
+
+- Total distance walked (all time)
+- Distance walked this month
+- Active walking days
+- Territories held today
+
+--------
+
+UI / CONTROLS
+
+- Default view
+	- 3D local map
+	- See hackathon map
+- Map View
+	- 2D world map
+	- See hackathon map
+- Profile View
+	- Profile picture
+	- Name + username (in favourite colour)
+	- Score
+	- Friends list
+- Three buttons at bottom
+	- Centered
+	- See OmniDice app
+- Profile button
+	- Centre
+	- Go to profile
+- Current location button
+	- Left of centre button
+	- Re-centre map on current location
+- Map button
+	- Right of centre button
+	- Switch to 2D world map and browse other locations
