@@ -27,8 +27,11 @@ TRAILS
 
 - Trails are drawn as the user walks
 - Approximate width: 10m
-- Trails are persistent but fade over time
+- Trails are persistent but are removed over time
 - Trails contribute to realm ownership but do not stack infinitely for score
+- Trails are only recorded at on-foot speeds
+- Trails are not tracked while location is off / offline
+- New trails ownership overwrites pre-owned trails at that location
 
 --------
 
@@ -126,7 +129,7 @@ LOCAL MAP VIEW (3D)
 - See hackathon map
 
 --------
-
+    
 WORLD MAP VIEW (2D)
 
 - 2D world map
