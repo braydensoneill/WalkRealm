@@ -1,0 +1,13 @@
+WalkRealm
+
+--------
+
+CORE IDEA
+
+- A location-based walking game focused on persistent trails, and competitive territorial control
+
+- Walking in the real world leaves permanent marks on a shared map
+
+- Players compete by claiming space over time
+
+- Score is earned daily by 'ruling' a greater area (realm) every day
