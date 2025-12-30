@@ -5,9 +5,52 @@ WalkRealm
 CORE IDEA
 
 - A location-based walking game focused on persistent trails, and competitive territorial control
-
 - Walking in the real world leaves permanent marks on a shared map
-
 - Players compete by claiming space over time
-
 - Score is earned daily by 'ruling' a greater area (realm) every day
+
+--------
+
+GAME LOOP
+
+- Player opens the app
+- App tracks location while walking
+- A trail is drawn behind the player
+- Trail becomes permanently claimed
+- Claimed trails contribute to territory control
+- Realm rulers earn daily score
+- Score feeds long-term progression and status
+
+--------
+
+TRAILS
+
+- Trails are drawn as the user walks
+- Approximate width: 10m
+- Trails are persistent but fade over time
+- Trails contribute to territorial ownership but do not stack infinitely for score
+
+--------
+
+TERRITORIES
+
+- The world is divided into fixed grid cells (e.g. 50m x 50m)
+- Trails claim cells they pass through
+- A territory is a larger grouping of cells (e.g. 500m x 500m)
+
+--------
+
+USERS
+
+- Players are known as Walkers.
+- Public Information
+	- Username (unique)
+	- Display name
+	- Total score
+	- Favourite colour (used for name + territory highlight)
+	- Friend list
+- Private Information
+	- Email
+	- Date of birth (under 18 -> entire account is private)
+	- Live location
+	- Raw trail data
