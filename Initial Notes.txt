@@ -94,17 +94,6 @@ STATS RECORDED
 
 UI / CONTROLS
 
-- Default view
-	- 3D local map
-	- See hackathon map
-- Map View
-	- 2D world map
-	- See hackathon map
-- Profile View
-	- Profile picture
-	- Name + username (in favourite colour)
-	- Score
-	- Friends list
 - Three buttons at bottom
 	- Centered
 	- See OmniDice app
@@ -113,7 +102,32 @@ UI / CONTROLS
 	- Go to profile
 - Current location button
 	- Left of centre button
+	- Go to local map view
 	- Re-centre map on current location
 - Map button
 	- Right of centre button
+	- Go to world map view
 	- Switch to 2D world map and browse other locations
+
+--------
+
+PROFILE VIEW
+
+- Profile picture
+- Name + username (in favourite colour)
+- Score
+- Friends list
+
+--------
+
+LOCAL MAP VIEW (3D)
+
+- 3D local map
+- See hackathon map
+
+--------
+
+WORLD MAP VIEW (2D)
+
+- 2D world map
+- See hackathon map
